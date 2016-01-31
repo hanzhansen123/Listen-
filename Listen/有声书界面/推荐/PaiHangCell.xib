@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PaiHangCell" id="2xk-pc-Atc" customClass="PaiHangCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2xk-pc-Atc" id="zXG-aB-KrX">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paihang.png" translatesAutoresizingMaskIntoConstraints="NO" id="HDw-9G-7oS">
+                        <rect key="frame" x="14" y="0.0" width="50" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="mDg-iT-Spv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日更新最火的节目" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VJ-op-WLs">
+                        <rect key="frame" x="77" y="28" width="247" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="jGj-7i-awc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="top50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uub-ye-icQ">
+                        <rect key="frame" x="77" y="6" width="247" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wc2-Pv-el1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STSongti-SC-Regular" family="Songti SC" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uub-ye-icQ" firstAttribute="top" secondItem="zXG-aB-KrX" secondAttribute="top" constant="6" id="5uw-Kr-XQt"/>
+                    <constraint firstItem="HDw-9G-7oS" firstAttribute="leading" secondItem="zXG-aB-KrX" secondAttribute="leading" constant="14" id="CCe-Me-NdB"/>
+                    <constraint firstItem="HDw-9G-7oS" firstAttribute="top" secondItem="zXG-aB-KrX" secondAttribute="top" id="NnR-Ha-Xpq"/>
+                    <constraint firstAttribute="trailing" secondItem="Uub-ye-icQ" secondAttribute="trailing" constant="18" id="cf8-Zn-PKT"/>
+                    <constraint firstItem="4VJ-op-WLs" firstAttribute="leading" secondItem="HDw-9G-7oS" secondAttribute="trailing" constant="13" id="fjP-eZ-rRh"/>
+                    <constraint firstItem="4VJ-op-WLs" firstAttribute="top" secondItem="Uub-ye-icQ" secondAttribute="bottom" constant="1" id="kO0-Xr-tBV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4VJ-op-WLs" secondAttribute="trailing" constant="10" id="lQs-g4-YFQ"/>
+                    <constraint firstAttribute="bottom" secondItem="HDw-9G-7oS" secondAttribute="bottom" constant="1" id="leW-zX-2oP"/>
+                    <constraint firstItem="Uub-ye-icQ" firstAttribute="leading" secondItem="HDw-9G-7oS" secondAttribute="trailing" constant="13" id="qpF-df-Whb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="234.5" y="83"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paihang.png" width="178" height="178"/>
+    </resources>
+</document>
